@@ -28,11 +28,12 @@ class Autenticacion_controller extends CI_Controller {
         
         $session_data = array('fechahora'=>date('Y')."/".date('m')."/".date('d')." ".date('H').":".date('i').":".date('s'),'my_session_id' =>md5(uniqid(rand(), TRUE)));
         $this->session->set_userdata( $session_data );          
-        echo "<br>sess2:";
-        print_r($this->session->sess_expiration);
         
-        echo "<br>sess user:";
-        print_r($this->session->userdata());
+        $data['sess'] = $this->session->sess_expiration;
+        
+        $data['userdata'] = $this->session->userdata();
+        
+        echo json_encode($data);
     } 
     public function verifica() {
         echo "<br>sess:";
