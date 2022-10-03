@@ -55,7 +55,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <script src="<?=base_url("vendors/iconify/iconify.min.js")?>" type="text/javascript"></script>  
         <!-- Stylesheet -->   
         <link rel="stylesheet" href="<?=base_url("application/views/template/sistema/css/styles.css")?>">  
-        <link rel="stylesheet" href="<?=base_url("application/views/template/sistema/css/icon-font.min.css")?>">    
         <!-- Chosen -->
         <link rel="stylesheet" href="<?=base_url("vendors/chosen/chosen.css")?>">
         <link rel="stylesheet" href="<?=base_url("vendors/chosen/docsupport/prism.css")?>">
@@ -69,17 +68,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <!-- DropZone -->
         <script src="<?=base_url('vendors/dropzone/dropzone.js')?>" type="text/javascript"></script>
         <link href="<?=base_url('vendors/dropzone/dropzone.css')?>" rel="stylesheet"/>
-        <!-- GENERAL -->
-        <script src="<?=base_url("application/views/template/sistema/js/general.js".$this->urlVersionSite)?>" type="text/javascript" charset="utf-8"></script>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-1L8C9MGYW8"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-
-		  gtag('config', 'G-1L8C9MGYW8');
-		</script>	        
+ 
     </head>
     <body>
             <div class="row" style="display: none; position: fixed; width: 100%; height: 150%; background-color: #111; z-index: 9999; opacity: .5; margin: -180px 0px 0px 0px; padding-top:-100px;" id='loader_panel'>

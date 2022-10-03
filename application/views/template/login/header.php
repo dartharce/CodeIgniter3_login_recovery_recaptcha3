@@ -1,10 +1,4 @@
 <?php
-/* 
- * Sistema Web Responsivo Club Del Pintor Axalta Guatemala  *
- * @author	Strategic Solutions S.A. de C.V             * 
- * @programmer  Enrique Arce Rosas                          * 
- * @CreateDate 11 abr. 2022 15:31:56                        * 
- */
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
@@ -43,19 +37,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <link href="<?=base_url("vendors/animate/animate.min.css")?>" rel="stylesheet" type="text/css"/> 
         <!-- Stylesheet -->   
         <link rel="stylesheet" href="<?=base_url("application/views/template/login/css/styles.css")?>">  
-        <link rel="stylesheet" href="<?=base_url("application/views/template/login/css/icon-font.min.css")?>">
-        <!-- GENERAL -->
-        <script src="<?=base_url("application/views/template/sistema/js/general.js")?>" type="text/javascript" charset="utf-8"></script>        
-        </head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-1L8C9MGYW8"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-
-		  gtag('config', 'G-1L8C9MGYW8');
-		</script>	        
+        
+        <!-- Stylesheet -->
+        <script src="https://www.google.com/recaptcha/api.js?render=<?=$this->config->item('google_key')?>"></script>   
+        </head>	        
         <body class="main">
             <div class="row" style="display: none; position: fixed; width: 100%; height: 150%; background-color: #111; z-index: 9999; opacity: .5; margin: -180px 0px 0px 0px;" id='loader_panel'>
                 <img src="<?=base_url("application/views/template/sistema/imagenes/cargando.gif")?>" style='width: 400px; height: 400px; margin: auto auto;'>
